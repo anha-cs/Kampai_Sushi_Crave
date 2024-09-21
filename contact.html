@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Kampai Sushi & Grill</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+</head>
+<body class="contact-page">
+    <!-- Main Section -->
+    <div class="main">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="logo">Kampai</div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact & Feedback</a></li>
+                </ul>
+            </nav>
+            <div class="search">
+                <input class="srch" type="search" id ="searchInput" placeholder="Search...">
+                <button class="btn" onclick="highlightSearch()">Go</button>
+            </div>
+        </header>
+
+        <!-- Content Section -->
+        <div class="contact-content" id="content">
+            <h1 class="animate-text">Contact us</h1>
+            <div class="container contact-box">
+                <div class="left"></div>
+                <div class="right">
+                    <h2>Let Us Know</h2>
+                    <form id="dataForm">
+                    <div class="name-box">
+                        <input type="text" id="name" class="field" placeholder="Your Name" required><br><br>
+                        <i class='bx bx-question-mark'></i>
+                    </div>
+                    <div class="email-box">
+                        <input type="email" id="email" class="field" placeholder="Your email" required><br><br>
+                        <i class='bx bx-envelope'></i>
+                    </div>
+                    <div class="phone-box">
+                        <input type="text" id="phone" class="field" placeholder="Your phone" required><br><br>
+                        <i class='bx bxs-phone-call'></i>
+                    </div>
+                    <div class="message-box">
+                        <textarea id="message" class="field area" placeholder="Message" required></textarea><br><br>
+                        <i class='bx bx-message-rounded-dots'></i>
+                    </div>
+                    <button class="btn" type="submit">Submit</button>
+                    <button class="btn" type="button" onclick="clearForm()">Clear</button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<footer class="footer" id="content"> 
+    <div class="footer-content">
+        <p>© 2024 Kampai Sushi & Grill. All rights reserved.</p>
+        <p>171 Branham Ln. #3</p>
+        <p>San Jose, CA 95136</p>
+        <p>408-365-9000</p>
+    </div>
+</footer>
+</html>
