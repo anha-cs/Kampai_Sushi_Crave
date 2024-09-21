@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kampai Sushi</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="menu-page">
+    <!-- Main Section -->
+    <div class="main">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="logo">Kampai</div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact & Feedback</a></li>
+                </ul>
+            </nav>
+            <div class="search">
+                <input class="srch" type="search" id ="searchInput" placeholder="Search...">
+                <button class="btn" onclick="highlightSearch()">Go</button>
+            </div>
+        </header>
+
+        <!-- Content Section -->
+        <section class="menu-content" id="content">
+            <h1>Our Menu</h1>
+            <img src="menu1.png" class="menu-image" />
+            <img src="menu2.png" class="menu-image" />
+            <img src="menu3.png" class="menu-image" />
+            <img src="menu4.png" class="menu-image" />
+            <button class="btn" id="content" onclick="showNextImage()">Next</button>"      
+        </section>
+    </div>
+</body>
+<footer class="footer" id="content"> 
+    <div class="footer-content">
+        <p>© 2024 Kampai Sushi & Grill. All rights reserved.</p>
+        <p>171 Branham Ln. #3</p>
+        <p>San Jose, CA 95136</p>
+        <p>408-365-9000</p>
+    </div>
+</footer>
+</html>
