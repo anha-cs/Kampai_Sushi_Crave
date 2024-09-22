@@ -63,31 +63,6 @@ function showNextImage() {
 
 
 
-// Function to get information from the submit form in contact page, and write the collected data to an excel file
-document.getElementById('dataForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-
-    // Collect form data
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const phone = document.getElementById('phone').value;
-    const message = document.getElementById('message').value;
-
-    // Create a new workbook and worksheet
-    const wb = XLSX.utils.book_new();
-    const ws_data = [
-        ["Name", "Email", "Phone Number", "Message"],
-        [name, email, phone, message]
-    ];
-    const ws = XLSX.utils.aoa_to_sheet(ws_data);
-
-    // Append the worksheet to the workbook
-    XLSX.utils.book_append_sheet(wb, ws, "Sheet1");
-
-    // Write the workbook to a file
-    XLSX.writeFile(wb, "data.xlsx");
-});
-
     // Function to clear all the input field in the form
     function clearForm() {
         document.getElementById("name").value = '';
